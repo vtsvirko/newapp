@@ -1,0 +1,8 @@
+<h1>Home Page</h1>
+
+<ul *ngIf="members">
+ <li *ngFor="let member of members.data">
+    <img [src]="member.avatar"alt="face image of {{member.first_name}}">
+    <p>{{ member.last_name }}, {{ member.first_name}}</p>
+ </li>
+</ul>
